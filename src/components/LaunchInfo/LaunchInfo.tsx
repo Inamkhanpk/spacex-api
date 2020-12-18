@@ -44,7 +44,7 @@ interface Props {
     data: LaunchProfileQuery 
 }
 
-const className = 'LaunchProfile';
+//const className = 'LaunchProfile';
 
 const MissionInfo: React.FC<Props> = ({ data }) => {
     console.log(data)
@@ -77,7 +77,7 @@ const MissionInfo: React.FC<Props> = ({ data }) => {
 {!!data.launch.links && !!data.launch.links.flickr_images && (
   <div className={classes.rootimagelist}>
     {data.launch.links.flickr_images.map(image =>
-      image ? <img src={image} className={classes.rootimage} key={image} /> : null,
+      image ? <img src={image} alt="launchinfo" className={classes.rootimage} key={image} /> : null,
     )}
   </div>
 )}
