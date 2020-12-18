@@ -44,7 +44,7 @@ interface Props {
     data: LaunchProfileQuery 
 }
 
-//const className = 'LaunchProfile';
+
 
 const MissionInfo: React.FC<Props> = ({ data }) => {
     console.log(data)
@@ -54,10 +54,7 @@ const MissionInfo: React.FC<Props> = ({ data }) => {
         return <div>No launch available</div>;
       }
     return (
-        // <div className={classes.root}>
-        //     <h3>Mission Details</h3>
-        //     {data};
-        // </div>
+        
        
 <div className={classes.root}>
 <div className={classes.rootstatus}>
